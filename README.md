@@ -64,7 +64,7 @@ should take around 2 hours to complete.
   <p><a href="#">&bull; Ice Breaker</a></p>
 	<p><a href="lessons/intro_to_ds/intro_DS.pdf">&bull; Intro to Data Science</a></p>
 	<p><a href="https://github.com/Tuwaiq-Bootcamp/BPM_Prework/blob/main/lessons/03_git_github">&bull; Git and Github</a><br />
-	  <a href="https://github.com/Tuwaiq-Bootcamp/BPM_Prework/blob/main/lessons/01_comments_variables_datatypes">&bull; Comments, Variables and Basic Data Types</a><br />
+	  <a href="lessons/01_comments_variables_datatypes">&bull; Comments, Variables and Basic Data Types</a><br />
 			<a href="https://github.com/Tuwaiq-Bootcamp/BPM_Prework/blob/main/lessons/02_booleans_conditionals">&bull; Boolean and Conditional Logic</a><br />
 			</p>
 </td>
