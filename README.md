@@ -121,7 +121,6 @@ should take around 2 hours to complete.
 			<a href="lessons/34_linear_functions_derivatives">&bull; Linear Functions and Derivatives </a><br />
 			<a href="lessons/35_extrema_partial_derivatives_gradients">&bull; Extrema, Partial Derivatives, and Gradients </a></td>
 			<td style="width:18.5031%"><a href="https://github.com/Tuwaiq-Bootcamp/Metis_Fundamentals/tree/main/pair_programming_guidelines">&bull; Pair Programming Intro and Guidelines </a><br />
-			<a href="https://github.com/Tuwaiq-Bootcamp/Metis_Fundamentals/tree/main/cloud_computing">&bull; Cloud Computing </a><br />
 			&bull; Fill Survey</td>
   </tr>
 </tbody>
