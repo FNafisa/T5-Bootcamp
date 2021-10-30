@@ -46,7 +46,7 @@ should take around 2 hours to complete.
 
 
 # Course Schedule
-
+<p><a href="Homework solution">&bull; Homework solution here !</a></p>
 <p>&nbsp;</p>
 <table style="width: 100%;" width="100%">
 <tbody>
