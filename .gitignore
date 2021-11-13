@@ -1,0 +1,6 @@
+ # ignores files contain data
+*.db
+*.bak
+*.csv
+*.sql
+*.sqlite

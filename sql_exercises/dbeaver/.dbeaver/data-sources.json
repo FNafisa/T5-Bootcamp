@@ -1,0 +1,30 @@
+{
+	"folders": {},
+	"connections": {
+		"sqlite_jdbc-17cfc444241-3fcca01b4217f003": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "city.csv",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"database": "C:\\Users\\fahadd\\T5-Datacamp-II\\PRACTICE\\GAMMA\\dbeaver\\csvs\\city.csv",
+				"url": "jdbc:sqlite:C:\\Users\\fahadd\\T5-Datacamp-II\\PRACTICE\\GAMMA\\dbeaver\\csvs\\city.csv",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}

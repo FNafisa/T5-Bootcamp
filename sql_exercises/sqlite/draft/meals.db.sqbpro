@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/fahadd/T5-Datacamp-II/.venv/PRACTICE/GAMMA/sqlite/draft/meals.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="125"/><column_width id="3" width="955"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,11:mainRESTAURANTS"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="CONTINENT" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="77"/><column index="2" value="114"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="RESTAURANTS" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="115"/><column index="2" value="77"/><column index="3" value="136"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">create table RESTAURANTS (
+    Name varchar ,
+    Cuisine varchar,
+    Date_Founded date
+) ;
+
+create table CONTINENT (
+    Cuisine	varchar ,
+    Continent varchar
+);
+
+INSERT INTO Continent (Cuisine,Continent) 
+VALUES 
+	('American','North America'),('Maxican','North America');
+	
+insert into RESTAURANTS (Name, Cuisine , Date_Founded)
+VALUES( 'Chipotle' ,	'Mexican' , 	'7-13-1993' );
+insert into RESTAURANTS (Name, Cuisine , Date_Founded)
+VALUES( 'Taco Bell' , 	'Mexican' , 	'3-21-1962');
+insert into RESTAURANTS (Name, Cuisine , Date_Founded)
+VALUES( 'McDonald''s' ,	'American'	 , '4-15-1955' );
+insert into RESTAURANTS (Name, Cuisine , Date_Founded)
+VALUES( 'Popeye''s' , 	'American' , null);
+insert into RESTAURANTS (Name, Cuisine , Date_Founded)
+VALUES( 'Panda Express' , 	'Chinese'	 ,  '1-23-1983' );</sql><sql name="SQL 2">-- Part 1
+-- Show me everything in the RESTAURANTS table.
+SELECT * FROM RESTAURANTS;
+-- Show me the Names in the table.
+SELECT Name FROM RESTAURANTS;
+-- Show me the unique Cuisines.
+SELECT DISTINCT Cuisine FROM RESTAURANTS;
+-- Show me 3 rows of data.
+SELECT * FROM RESTAURANTS LIMIT 3;
+-- Sort the restaurant names alphabetically.
+SELECT * FROM RESTAURANTS ORDER BY Name ASC;
+-- Exclude the rows with NULL values.
+SELECT * FROM RESTAURANTS WHERE Date_Founded IS NOT NULL;
+-- What is the number of rows without NULL values?
+SELECT count(*) FROM RESTAURANTS WHERE Date_Founded or Name or Cuisine IS NOT NULL;
+-- Show me all restaurants founded between 1/1/1950 and 1/1/1970.
+/*UPDATE RESTAURANTS
+SET Date_Founded = '1983-23-1' -- 1-23-1983
+WHERE Name = 'Panda Express'; -- */
+SELECT * FROM RESTAURANTS WHERE Date_Founded BETWEEN '1950-1-1' AND '1970-1-1';
+-- Out of all the restaurants, show me all restaurants that start with the letter P.
+SELECT * FROM RESTAURANTS WHERE Name like 'P%';
+
+
+-- Part 2
+-- In the RESTAURANTS table, how many restaurants are there of each type of cuisine?
+SELECT Cuisine, count(*)
+FROM RESTAURANTS
+GROUP BY Cuisine;
+-- Rename the new column you created as Num_Cuisine.
+SELECT Cuisine, count(*) Num_Cuisine
+FROM RESTAURANTS
+GROUP BY Cuisine;
+-- For every restaurant, show me the continent that its cuisine is from. If the continent isn't in the CONTINENT table, don't show the data.
+-- For every restaurant, show me the continent that its cuisine is from. If the continent isn't in the CONTINENT table, still show the data.
+-- Show me restaurants that are Mexican or Chinese.
+-- Show me restaurants that are not American.
+-- Output the name of the Mexican restaurant that was founded most recently.</sql><current_tab id="1"/></tab_sql></sqlb_project>
