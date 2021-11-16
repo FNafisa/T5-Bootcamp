@@ -4,3 +4,4 @@
 *.csv
 *.sql
 *.sqlite
+/.venv
